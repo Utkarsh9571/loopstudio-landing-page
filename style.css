@@ -14,6 +14,10 @@ body{
     min-height: 100vh;
     width: 100%;
     font-family: 'Josefin Sans';
+    margin: 0 auto;
+}
+.container{
+    display: block;
 }
 header{
     background-image: url(./images/mobile/image-hero.jpg);
@@ -167,41 +171,58 @@ header h1{
 .pic h1{
     width: 40%;
 }
+
 .pic:hover {
+    background-color: rgba(255, 255, 255, 0.25); 
     cursor: pointer;
     color: var(--Black);
-    opacity: 0.75;
 }
 .deep:hover, .from:hover, .pocket:hover {
+    background-color: rgba(255, 255, 255, 0.25); 
     cursor: pointer;
     color: var(--White);
-    opacity: 0.75;
 }
 .from h1{
     width: 50%;
 }
-.deep{
-    background-image: url(./images/mobile/image-deep-earth.jpg);
+.deep { 
+    background-color: rgba(255, 255, 255, 0); 
+    background-blend-mode: overlay; 
+    background-image: url(./images/desktop/image-deep-earth.jpg);     
 }
 .arcade{
+    background-color: rgba(255, 255, 255, 0); 
+    background-blend-mode: overlay; 
     background-image: url(./images/mobile/image-night-arcade.jpg);
 }
 .soccer{
+    background-color: rgba(255, 255, 255, 0); 
+    background-blend-mode: overlay; 
     background-image: url(./images/mobile/image-soccer-team.jpg);
 }
 .grid{
+    background-color: rgba(255, 255, 255, 0); 
+    background-blend-mode: overlay; 
     background-image: url(./images/mobile/image-grid.jpg);
 }
 .from{
+    background-color: rgba(255, 255, 255, 0); 
+    background-blend-mode: overlay; 
     background-image: url(./images/mobile/image-from-above.jpg);
 }
 .pocket{
+    background-color: rgba(255, 255, 255, 0); 
+    background-blend-mode: overlay; 
     background-image: url(./images/mobile/image-pocket-borealis.jpg);
 }
 .curiosity{
+    background-color: rgba(255, 255, 255, 0); 
+    background-blend-mode: overlay; 
     background-image: url(./images/mobile/image-curiosity.jpg);
 }
 .fisheye{
+    background-color: rgba(255, 255, 255, 0); 
+    background-blend-mode: overlay; 
     background-image: url(./images/mobile/image-fisheye.jpg);
 }
 .creations h3, .creations h2{
@@ -456,9 +477,6 @@ footer{
     }
 }
 @media screen and  (min-width:1440px){
-    .container{
-        max-width: 1440px;
-    }
     .pic{
         padding-top: 32em;
     }
